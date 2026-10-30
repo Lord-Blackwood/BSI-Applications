@@ -4,29 +4,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="9ieUfRTKPk-8YkNty3VzTApTtOe651GSEqhWCvqNE6E" />
-<title>Blackwood Strategic Intelligence Apps</title>
-<style>
-  :root { --bg: #0F1113; --panel: #16191D; --line: #2C3036; --text: #D8D6D0; --muted: #9A9A94; --bronze: #B08D57; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 "Segoe UI", system-ui, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 18px 64px; }
-  .strap { color: var(--bronze); font-size: 12px; font-weight: 700; letter-spacing: .12em; }
-  h1 { font-size: 28px; margin: 4px 0 24px; }
-  .app { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; margin-bottom: 12px; }
-  .app h2 { margin: 0 0 4px; font-size: 20px; }
-  .muted { color: var(--muted); }
-  a { color: var(--bronze); }
-</style>
+<title>Blackwood Strategic Intelligence · Apps</title>
+<meta name="description" content="Apps made by Blackwood Strategic Intelligence.">
+<meta name="theme-color" content="#0F1113">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+<header class="bw-header"><div class="inner">
+<a href="./"><img src="assets/blackwood-logo.png" alt="Blackwood Strategic Intelligence logo"></a>
+<div class="names"><div class="strap">Blackwood Strategic Intelligence</div><div class="app">Applications</div></div>
+<div class="clock" aria-label="Current time, UTC"><span id="utc">----:--Z</span><small id="utcd">-- --- --</small></div>
+</div></header>
 <main>
-<div class="strap">BLACKWOOD STRATEGIC INTELLIGENCE</div>
 <h1>Our apps</h1>
-<div class="app">
-  <h2>Odin’s Gaze: The Sky Revealed</h2>
-  <p class="muted">Android and Wear OS. Name the stars, planets and satellites over your head.</p>
-  <p><a href="odins-gaze/privacy.html">Privacy policy</a></p>
+<p class="lead">Apps made by Blackwood Strategic Intelligence.</p>
+<section class="card app-card">
+<img src="assets/odinsgaze-logo.png" alt="Odin’s Gaze app icon">
+<div>
+<h2>Odin’s Gaze: The Sky Revealed</h2>
+<p class="muted" style="margin:0">Android and Wear OS</p>
+<p style="margin:8px 0 0">Hold your phone up to the night sky and Odin’s Gaze names the stars, planets and satellites you're looking at, with a natural spoken voice, guided tours and the southern lights.</p>
+<div class="links"><a class="btn" href="odins-gaze/privacy.html">Privacy policy</a></div>
 </div>
-<p class="muted">Contact: <a href="mailto:googleplaystore.aorta044@passinbox.com">googleplaystore.aorta044@passinbox.com</a></p>
+</section>
+<section class="card">
+<h2>Contact</h2>
+<p>Blackwood Strategic Intelligence · <a href="mailto:googleplaystore.aorta044@passinbox.com">googleplaystore.aorta044@passinbox.com</a></p>
+</section>
 </main>
+<footer><div class="inner">
+<span>© 2026 Blackwood Strategic Intelligence. All rights reserved.</span>
+<span><a href="./">All apps</a> · <a href="mailto:googleplaystore.aorta044@passinbox.com">Contact</a></span>
+</div></footer>
+<script>
+(function(){var m=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+function p(n){return (n<10?"0":"")+n}
+function t(){var d=new Date();document.getElementById("utc").textContent=p(d.getUTCHours())+p(d.getUTCMinutes())+":"+p(d.getUTCSeconds())+"Z";
+document.getElementById("utcd").textContent=p(d.getUTCDate())+" "+m[d.getUTCMonth()]+" "+String(d.getUTCFullYear()).slice(2)}
+t();setInterval(t,1000)})();
+</script>
 </body>
 </html>
